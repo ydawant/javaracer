@@ -1,0 +1,9 @@
+Print this!
+
+<% if @game.rounds.find_by_player_id(@player1.id).win == true %>
+<p> Player 1 has won the game with a time of: <%= @game.rounds.find_by_player_id(@player1.id).time %> </p>
+<% elsif @game.rounds.find_by_player_id(@player2.id).win == true %>
+<p> Player 2 has won the game with a time of: <%= @game.rounds.find_by_player_id(@player2.id).time %> </p>
+<% end %>
+
+<a href="/home"> Go Home </a>

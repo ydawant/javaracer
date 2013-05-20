@@ -1,0 +1,31 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+
+.racer_table td {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border: black;
+}
+
+.racer_table td.active {
+  background-color: black;
+  height:20px;
+  width:20px;
+  border: black;
+}
+
+.racer_table td.active1 {
+  background-color: black;
+  height:20px;
+  width:20px;
+  border: black;
+}
