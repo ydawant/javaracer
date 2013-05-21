@@ -6,7 +6,7 @@ class Player < ActiveRecord::Base
   has_many :games,  :through => :rounds
 
 
- attr_accessor :new_password
+  attr_accessor :new_password
   before_save :hash_password
 
   def self.auth_password(password)

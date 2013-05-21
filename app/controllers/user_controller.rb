@@ -16,7 +16,7 @@ end
 
 post '/new_user' do
   inputs = {:username => params[:username], :new_password => params[:new_password]}
-  @player = Player.create(inputs)
-  session[:player_id] = @player.id
+  @player1 = Player.create(inputs)
+  session[:player_id_1] = @player1.id
   redirect "/home"
 end

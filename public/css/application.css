@@ -16,14 +16,14 @@ th {
   border: black;
 }
 
-.racer_table td.active {
+.racer_table td.player_1_track {
   background-color: black;
   height:20px;
   width:20px;
   border: black;
 }
 
-.racer_table td.active1 {
+.racer_table td.player_2_track {
   background-color: black;
   height:20px;
   width:20px;
