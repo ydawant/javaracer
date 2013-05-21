@@ -1,0 +1,6 @@
+<% @game.rounds.each do |round| %>
+   <% @player = Player.find(round.player_id)
+     if round.win == true %>
+     <%= @player.username %> won!
+     <% end %>
+     <% end %>
