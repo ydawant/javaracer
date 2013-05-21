@@ -12,5 +12,17 @@ get '/home' do
   end
 end
 
+post '/player-profile' do
+  @player = Player.find_by_username(params[:username])
+  @win = 0
+  @lose = 0
+  @player.rounds.each do |round|
+    if round.win == true
+      @win += 1
+    end
+  end
 
+  @percentage = (@win / @player.rounds.length.to_f) * 100
+  erb :stats
+end
 
